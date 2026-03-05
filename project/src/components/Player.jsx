@@ -24,7 +24,7 @@ export default function Player({initialName , symbol , isActive, onChangeName}) 
 
     // The name will show up only if the state is false otherwise the field of input will show up. 
     let playerName = <span className='player-name'>{playerN}</span>
-    if (isEditing && isActive) {
+    if (isEditing) {
         playerName = <input type="text" required value={playerN} onChange={handleChange}/>;
     }
 
