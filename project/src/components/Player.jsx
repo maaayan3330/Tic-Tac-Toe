@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // Here I want a component for one player : input(prop) -> name , symbol
-export default function Player({initialName , symbol , isActive}) {
+export default function Player({initialName , symbol , isActive, onChangeName}) {
     // set to false becuase the player not editing 
     const [isEditing , setIsEditing] = useState(false);
     // another useState for the name - the initial will be the first name
@@ -12,6 +12,9 @@ export default function Player({initialName , symbol , isActive}) {
     function handleEditClick() {
         // React provides the previous state value as 'editing'
         setIsEditing((editing) => !editing);
+        if (isEditing) {
+            onChangeName(symbol, playerName);
+        }
     }
 
     // func for change the name - FOR CHANGE NAME EVENT
