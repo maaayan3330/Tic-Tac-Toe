@@ -29,5 +29,5 @@ Players can edit their names, take turns placing their symbols, and the game aut
 
 ## 🚀 Live Demo
 <p align="center">
-  <img src="צילום מסך 2026-03-05 192715" width="700">
+  <img src="img.png" width="700">
 </p>
