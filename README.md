@@ -28,6 +28,10 @@ Players can edit their names, take turns placing their symbols, and the game aut
 - CSS
 
 ## 🚀 Live Demo
+
+https://tic-tac-toe-eight-gamma-91.vercel.app
+
+## 📸 Screenshot
 <p align="center">
   <img src="img.png" width="700">
 </p>
