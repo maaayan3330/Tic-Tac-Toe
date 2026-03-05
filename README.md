@@ -1,9 +1,9 @@
-🎮 Tic-Tac-Toe – React Game
+## 🎮 Tic-Tac-Toe – React Game
 
 A simple interactive Tic-Tac-Toe game built with React and Vite.
 Players can edit their names, take turns placing their symbols, and the game automatically detects wins or draws.
 
-✨ Features
+## ✨ Features
 
 - Dynamic game board
 
@@ -17,7 +17,7 @@ Players can edit their names, take turns placing their symbols, and the game aut
 
 - Turn history log
 
-🛠 Built With
+## 🛠 Built With
 
 - React
 
@@ -27,4 +27,7 @@ Players can edit their names, take turns placing their symbols, and the game aut
 
 - CSS
 
-🚀 Live Demo
+## 🚀 Live Demo
+<p align="center">
+  <img src="צילום מסך 2026-03-05 192715" width="700">
+</p>
