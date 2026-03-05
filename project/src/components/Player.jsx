@@ -10,13 +10,13 @@ export default function Player({initialName , symbol , isActive, onChangeName}) 
 
     // func for control the state of the botton - true or false
     function handleEditClick() {
-        // React provides the previous state value as 'editing'
-        setIsEditing((editing) => !editing);
-        if (isEditing) {
-            onChangeName(symbol, playerName);
+    setIsEditing((editing) => {
+        if (editing) {
+        onChangeName(symbol, playerN);
         }
+        return !editing;
+    });
     }
-
     // func for change the name - FOR CHANGE NAME EVENT
     function handleChange(event) {
         setPlayerName(event.target.value);
@@ -24,7 +24,7 @@ export default function Player({initialName , symbol , isActive, onChangeName}) 
 
     // The name will show up only if the state is false otherwise the field of input will show up. 
     let playerName = <span className='player-name'>{playerN}</span>
-    if (isEditing) {
+    if (isEditing && isActive) {
         playerName = <input type="text" required value={playerN} onChange={handleChange}/>;
     }
 
@@ -37,7 +37,7 @@ export default function Player({initialName , symbol , isActive, onChangeName}) 
     }
 
     return(
-          <li className={isActive ? 'active' : undefined }>
+          <li className={`player ${isActive ? 'active' : ''}`}>
             <span>
                 {playerName}
               <span className='player-symbol'>{symbol}</span>
